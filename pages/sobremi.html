@@ -3,75 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - Dímelo en Español</title>
     <link rel="shortcut icon" href="../multimedia/Logo.png" type="image/x-icon">
-    <title>Dímelo en Español- Sobre mi</title>
-        <link rel="stylesheet" href="../styles/styles.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
-    <section>
-        <a href="../index.html">
-            <img src="../multimedia/Logo.png" alt="Logo de Dimelo en Español" title="Logo" class="Logo">
-        </a>        
-    </section>      
-    <h1 class="principal">Dímelo en Español</h1>
-<nav>
-            <ul>
-                <li>
-                    <a href="sobremi.html" class="btn btn-outline-primary m-2">Sobre mí</a>
-                </li>
-                <li>
-                    <a href="clases.html" class="btn btn-outline-primary m-2">Clases</a>
-                </li>
-                <li>
-                    <a href="testimonios.html" class="btn btn-outline-primary m-2">Testimonios</a>
-                </li>
-                <li>
-                    <a href="contacto.html" class="btn btn-outline-primary m-2">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="inicio">
-        <h2 class="subtitulo-uno">Un poco de mi historia</h2>
-<div class="contenedor-presentacion">
-    <img src="/multimedia/20250502_174000.jpg" alt="Mi foto" class="foto">
 
-    <div class="texto-presentacion">
-        <p>¡Hola! Soy Romina Castagnolo, aunque todos me llaman Ro. Soy profesora de Lengua y Literatura Española y diplomada en Español como Lengua Extranjera. Nací y vivo en Mendoza, Argentina, una tierra que siempre llevo conmigo como se lleva el idioma: con orgullo, identidad y mucha pasión. Una provincia reconocida por sus paisajes al pie de la Cordillera de los Andes, sus viñedos mundialmente famosos y su riqueza cultural. Pero para mí es mucho más: es mi lugar en el mundo, un rincón donde el paisaje se mezcla con la cultura, la historia y una forma muy especial de vivir.</p>
-        
-        <p>Desde muy chica descubrí que enseñar era mi manera de estar en el mundo. A los 17 años empecé a dar clases particulares, y esa vocación que nació entre cuadernos y pizarras fue creciendo con los años. Luego estudié Letras en la universidad, y más adelante me formé como profesora de español para extranjeros. Así encontré mi verdadero lugar: el aula, el idioma, y el encuentro humano con personas de distintas culturas.</p>
-        
-        <p>Mis clases son dinámicas, vivas, llenas de conversación y temas diversos, porque creo que el idioma se aprende hablándolo, viviéndolo y compartiéndolo. He trabajado con personas de todas las edades y niveles, y en todos los casos mi objetivo es el mismo: que el español no sea solo una lengua que se estudia, sino una herramienta para conectar, para descubrir el mundo y para disfrutar.</p>
-        
-        <p>Lo que más define mis clases es la frescura y la transparencia. Enseñar, para mí, no es algo formal ni distante: es un vínculo vivo. Mis clases están llenas de charlas espontáneas, anécdotas, risas, mate y muchas aventuras compartidas. Con el tiempo, mis alumnos se vuelven amigos con los que construyo puentes, no solo lingüísticos, sino también afectivos y culturales.</p>
-        
-        <p>Amo la lectura tanto como la enseñanza. Soy lectora desde siempre: no hay un día sin un libro cerca. Mis autores favoritos son Borges y Gabriel García Márquez, dos gigantes que me inspiran tanto en la escritura como en la forma de entender el lenguaje. Me encanta viajar, conocer nuevos lugares y aprender de otras formas de vivir. Y quizás por eso enseñar español a personas de otros países se volvió, más que una elección profesional, una forma de vida.</p>
-        
-        <p>Hoy sigo recorriendo este camino con la misma curiosidad y entusiasmo del comienzo, compartiendo palabras, historias y culturas con quienes llegan desde distintos rincones del mundo. Porque para mí, enseñar no es solo transmitir un idioma: es tender puentes, crear vínculos y crecer con cada encuentro.</p>
-    <img src="../multimedia/libreria.jpg" alt="Mi foto" class="foto1">    
-    </div>
-</div>
+<header class="py-3 text-center">
+    <a href="./index.html">
+        <img src="../multimedia/logo.png" alt="Logo" title="Logo" class="Logo">
+    </a>
+    <h1 class="principal">Dímelo en Español</h1>
+
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a href="sobremi.html" class="btn btn-outline-primary m-2">Sobre mí</a></li>
+                    <li class="nav-item"><a href="clases.html" class="btn btn-outline-primary m-2">Clases</a></li>
+                    <li class="nav-item"><a href="testimonios.html" class="btn btn-outline-primary m-2">Testimonios</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="btn btn-outline-primary m-2">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="inicio">
+        <h2 class="subtitulo">Sobre mí</h2>
+        <div class="contenedor-flex">
+            <div class="bloque">
+                <img src="../multimedia/20250502_174000.jpg" alt="Foto de Ro" class="img1">
+                <p class="texto">
+                    ¡Hola! Soy Romina Castagnolo, aunque todos me llaman Ro. Soy profesora de Lengua y Literatura Española y diplomada en Español como Lengua Extranjera. Nací y vivo en Mendoza, Argentina, una tierra que siempre llevo conmigo como se lleva el idioma: con orgullo, identidad y mucha pasión. Una provincia reconocida por sus paisajes al pie de la Cordillera de los Andes, sus viñedos mundialmente famosos y su riqueza cultural. Pero para mí es mucho más: es mi lugar en el mundo, un rincón donde el paisaje se mezcla con la cultura, la historia y una forma muy especial de vivir.
+                </p>
+                <p class="texto">
+                    Desde muy chica descubrí que enseñar era mi manera de estar en el mundo. A los 17 años empecé a dar clases particulares, y esa vocación que nació entre cuadernos y pizarras fue creciendo con los años. Luego estudié Letras en la universidad, y más adelante me formé como profesora de español para extranjeros. Así encontré mi verdadero lugar: el aula, el idioma, y el encuentro humano con personas de distintas culturas.
+                </p>
+                <p class="texto">
+                    Mis clases son dinámicas, vivas, llenas de conversación y temas diversos, porque creo que el idioma se aprende hablándolo, viviéndolo y compartiéndolo. He trabajado con personas de todas las edades y niveles, y en todos los casos mi objetivo es el mismo: que el español no sea solo una lengua que se estudia, sino una herramienta para conectar, para descubrir el mundo y para disfrutar.
+                </p>
+                <p class="texto">
+                    Lo que más define mis clases es la frescura y la transparencia. Enseñar, para mí, no es algo formal ni distante: es un vínculo vivo. Mis clases están llenas de charlas espontáneas, anécdotas, risas, mate y muchas aventuras compartidas. Con el tiempo, mis alumnos se vuelven amigos con los que construyo puentes, no solo lingüísticos, sino también afectivos y culturales.
+                </p>
+                <p class="texto">
+                    Amo la lectura tanto como la enseñanza. Soy lectora desde siempre: no hay un día sin un libro cerca. Mis autores favoritos son Borges y Gabriel García Márquez, dos gigantes que me inspiran tanto en la escritura como en la forma de entender el lenguaje. Me encanta viajar, conocer nuevos lugares y aprender de otras formas de vivir. Y quizás por eso enseñar español a personas de otros países se volvió, más que una elección profesional, una forma de vida.
+                </p>
+
+        <p class="texto">
+                    Hoy sigo recorriendo este camino con la misma curiosidad y entusiasmo del comienzo, compartiendo palabras, historias y culturas con quienes llegan desde distintos rincones del mundo. Porque para mí, enseñar no es solo transmitir un idioma: es tender puentes, crear vínculos y crecer con cada encuentro.
+                </p>
+            </div>
+        </div>
     </section>
-    </main>
-    <footer>
-            <h3 class="titulo">Derechos Reservados</h3>
+</main>
+
+<footer>
+    <h3 class="titulo">Derechos Reservados</h3>
     <nav class="redes">
-        <a href="https://www.instagram.com/roocastagnolo/" target="_blank">
-            <img src="../multimedia/instagram.jpg" alt="Enlace a Instagram" title="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/in/romina-castagnolo/" target="_blank">
-<img src="../multimedia/linkedln.png" alt="Enlace a linkedin" title="linkedin">
-        </a>
-        <a href="https://web.whatsapp.com/" target="_blank">
-<img src="../multimedia/whatsapp.png" alt="Enlace a whatsapp" title="whatsapp">
-        </a>
-<a href="https://web.telegram.org/" target="_blank">
-    <img src="../multimedia/telegram.png" alt="Enlace a telegram" title="telegram">
-</a>
+        <a href="https://www.instagram.com/roocastagnolo/" target="_blank"><img src="../multimedia/instagram.jpg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/romina-castagnolo/" target="_blank"><img src="../multimedia/linkedln.png" alt="LinkedIn"></a>
+        <a href="https://web.whatsapp.com/" target="_blank"><img src="../multimedia/whatsapp.png" alt="WhatsApp"></a>
+        <a href="https://web.telegram.org/" target="_blank"><img src="../multimedia/telegram.png" alt="Telegram"></a>
     </nav>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

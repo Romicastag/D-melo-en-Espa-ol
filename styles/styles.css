@@ -1,19 +1,26 @@
 /* Inicio */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* ====== Estilos generales ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f7e9e9;
+}
+
+.Logo {
+    max-width: 200px;
+    height: auto;
+}
 
 .principal {
     font-family: cursive;
     color: #221e20;
     font-size: 28px;
-    text-align: center;
-    margin: 1px 0;
-}
-
-.Logo {
-    position: sticky;
-    top: 0;
-    height: 20vh;
-    width: auto;
+    margin: 5px 0;
 }
 
 .subtitulo {
@@ -23,46 +30,30 @@
     margin-top: 30px;
 }
 
-
-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    align-items: center;
+.main {
+    padding: 20px;
 }
 
-li {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    margin: 0 5px;
-    border-radius: 1px;
-}
-
-
-/* Bloques de inicio */
+/* ====== Contenido principal ====== */
 .contenedor-flex {
     display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    gap: 40px; 
-    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
     margin: 40px auto;
     max-width: 1200px;
 }
 
 .bloque {
-    width: 45%; 
+    width: 45%;
 }
 
 .img1, .img2 {
     border: 3px solid #b084cc;
     border-radius: 12px;
-    width: 100%; 
+    width: 100%;
     height: auto;
-    align-items:center;
-    justify-content: space-around;
 }
 
 .texto {
@@ -71,17 +62,65 @@ li {
     text-align: justify;
 }
 
+/* ====== Footer ====== */
+footer {
+    background-color: #ebd2d2;
+    padding: 10px;
+    text-align: center;
+}
+
+.redes img {
+    width: 35px;
+    margin: 5px;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    .bloque {
+        width: 100%;
+    }
+    .principal{
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .principal{
+        display: none;
+    }
+    
+
+    .Logo {
+        max-width: 80px;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .contenedor-flex {
+        gap: 20px;
+        margin: 10px auto;
+    }
+
+    .texto {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .redes img {
+        width: 28px;
+    }
+}
 
 /* Clases */
 .galeria-rosada {
-    background-color: #ffe6f0;
     padding: 3rem 1rem;
     text-align: center;
 }
 
 .contenedor-galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     max-width: 1000px;
     margin: auto;
@@ -89,7 +128,8 @@ li {
 
 .item-galeria img {
     width: 200px;
-    height: 200px;
+    height: auto;
+    max-width: 200px;
     object-fit: cover;
     border-radius: 50%;
     transition: transform 0.3s ease;
@@ -138,12 +178,22 @@ li {
     text-align: center;
 }
 .contenedor-mapa {
-    width: 400px;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; 
+    margin: 40px auto;
     padding: 10px;
+    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.contenedor-mapa iframe {
+    width: 100%;
+    height: 300px; 
+    border: 0;
+    border-radius: 10px;
+}
 /* Sobre mí */
 .contenedor-presentacion {
     display: flex;
@@ -154,26 +204,18 @@ li {
 }
 
 .foto{ 
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.foto1{
-    flex-wrap: wrap;
-    float: right;
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
-}
 
-.texto-presentacion{
-    max-width: 700px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
-    text-align: justify;
+.texto{
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: black;
+    text-align:justify;
 }
 
 .redes {
@@ -197,7 +239,7 @@ nav a img {
     align-items: flex-start;
     gap: 2rem;
     background-color: #ffe6f0; 
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
 }
 
@@ -222,7 +264,7 @@ nav a img {
 }
 
 .testimonios {
-    flex: 2 1 500px;
+    flex: 2 1 400px;
 }
 
 .testimonios h2 {
@@ -280,73 +322,3 @@ body {
     
 }
 
-@media (max-width: 425px) {
-
-.Logo {
-    height: 12vh;
-    max-width: 80px;
-    position: static;
-    display: block;
-    margin: auto;
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-}
-
-nav ul {
-    flex-direction: column;
-    padding: 0;
-    gap: 10px;
-}
-
-.subtitulo {
-    font-size: 20px;
-    padding: 0 15px;
-}
-
-li {
-    font-size: 16px;
-}
-
-footer {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-}
-
-.redes a img {
-    justify-items: center;
-    width: 30px;
-    height: auto;
-    margin: 0 5px;
-}
-
-.main {
-    padding: 0 10px;
-}
-
-.img1, .img2 {
-    width: 100%;
-    height: auto;
-}
-
-.texto {
-    font-size: 16px;
-    padding: 10px;
-    text-align: justify;
-}
-
-.contenedor-flex {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.bloque {
-    width: 45%;
-}
-}
