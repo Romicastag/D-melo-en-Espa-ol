@@ -1,0 +1,54 @@
+@use "variables" as v;
+.bloque-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    background-color: #ffe6f0;
+    padding: 1rem;
+    border-radius: 1rem;
+
+.imagen-ro {
+    flex: 1 1 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .foto-ro {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+    }
+}
+
+.testimonios {
+    flex: 2 1 400px;
+
+    h2 {
+    color: #b30059;
+    margin-bottom: 1rem;
+    }
+
+    .testimonio {
+    h3 {
+        font-family: cursive;
+        color: #800040;
+        margin-top: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.5;
+    }
+    }
+}
+}

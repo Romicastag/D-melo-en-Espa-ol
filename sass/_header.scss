@@ -1,0 +1,128 @@
+@use "variables" as v;
+
+header {
+position: sticky;
+top: 0;
+display: flex;
+  align-items: center; // alinea verticalmente al centro
+  justify-content: space-between; // logo a la izq, título centro, menú derecha
+background-color: #dbc5c5;
+  padding: 0.5rem 1rem; // menos altura
+
+.Logo {
+    max-height: 120px; // altura controlada
+    width: auto;
+}
+
+.principal {
+    font-family: cursive;
+    color: #85164e;
+    font-size: 24px;
+    margin: 0;
+}
+@media (max-width: 768px) { // cambia el valor si querés ocultarlo antes o después
+.principal {
+    display: none;
+}
+}
+
+.subtitulo {
+    font-family: fantasy;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(17, 17, 17);
+    margin: 0;
+}
+
+.header-items-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .header-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    img {
+        width: 100px; // mucho más pequeño que 400px
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    h3, p {
+        font-size: 12px;
+        text-align: center;
+        margin: 0;
+    }
+    }
+}
+}
+
+body{
+    background-image: url(../multimedia/fondo.jpg);
+}
+.main {
+    padding: 20px;
+
+.inicio {
+    text-align: center;
+
+    .subtitulo {
+    font-family: cursive;
+    font-size: 2rem;
+    color: #210d0d;
+    margin-bottom: 30px;
+    }
+
+    .contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+.bloque {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        flex: 1 1 45%; // ocupa casi la mitad en pantallas grandes
+        max-width: 600px; // permite imágenes más grandes
+
+        .img1,
+        .img2 {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        }
+
+        .texto {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #555;
+        text-align: justify;
+        }
+    }
+    }
+}
+}
+
+// Responsive para móviles
+@media (max-width: 768px) {
+.main {
+    .inicio {
+    .contenedor-flex {
+        flex-direction: column;
+        align-items: center;
+
+        .bloque {
+          flex: 1 1 100%; // ocupa todo el ancho
+          max-width: 100%; // sin límite
+        }
+    }
+    }
+}
+}

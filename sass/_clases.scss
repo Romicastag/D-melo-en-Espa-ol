@@ -1,0 +1,72 @@
+@use "variables" as v;
+.galeria-rosada {
+padding: 3rem 1rem;
+text-align: center;
+
+.contenedor-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .item-galeria {
+    display: flex;
+      flex-direction: column; 
+    align-items: center;
+    text-align: center;
+      max-width: 400px; 
+
+    img {
+        width: 200px;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+
+        &:hover {
+        transform: scale(1.1);
+        }
+    }
+
+    .texto-galeria {
+        margin-top: 1rem;
+
+        h5 {
+        font-size: 1.2rem;
+        color: #b30059;
+        margin-bottom: 0.5rem;
+        }
+
+        p {
+        font-size: 1rem;
+        color: #333;
+        }
+    }
+    }
+}
+.subtitulo-uno {
+  font-family: cursive;
+}
+  // Computadora
+@media (min-width: 1024px) {
+    .contenedor-galeria {
+    .item-galeria {
+        flex-direction: row; 
+        text-align: left;
+        align-items: center;
+        max-width: 600px; 
+
+        img {
+        width: 220px;
+        margin-right: 20px;
+        margin-top: 0;
+        }
+
+        .texto-galeria {
+        margin-top: 0;
+        }
+    }
+    }
+}
+}
