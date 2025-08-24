@@ -4,13 +4,13 @@ header {
 position: sticky;
 top: 0;
 display: flex;
-  align-items: center; // alinea verticalmente al centro
-  justify-content: space-between; // logo a la izq, título centro, menú derecha
-background-color: #dbc5c5;
-  padding: 0.5rem 1rem; // menos altura
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #dbc5c5;
+    padding: 0.5rem 1rem; 
 
 .Logo {
-    max-height: 120px; // altura controlada
+    max-height: 120px; 
     width: auto;
 }
 
@@ -20,7 +20,7 @@ background-color: #dbc5c5;
     font-size: 24px;
     margin: 0;
 }
-@media (max-width: 768px) { // cambia el valor si querés ocultarlo antes o después
+@media (max-width: 768px) { 
 .principal {
     display: none;
 }
@@ -46,7 +46,7 @@ background-color: #dbc5c5;
     gap: 5px;
 
     img {
-        width: 100px; // mucho más pequeño que 400px
+        width: 100px; 
         height: auto;
         object-fit: cover;
         border-radius: 12px;
@@ -62,7 +62,7 @@ background-color: #dbc5c5;
 }
 
 body{
-    background-image: url(../multimedia/fondo.jpg);
+    background-image: url(../multimedia/fondo.png);
 }
 .main {
     padding: 20px;
@@ -88,8 +88,8 @@ body{
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        flex: 1 1 45%; // ocupa casi la mitad en pantallas grandes
-        max-width: 600px; // permite imágenes más grandes
+        flex: 1 1 45%; 
+        max-width: 600px; 
 
         .img1,
         .img2 {
@@ -110,7 +110,7 @@ body{
 }
 }
 
-// Responsive para móviles
+// Responsive para celulares
 @media (max-width: 768px) {
 .main {
     .inicio {
@@ -119,8 +119,8 @@ body{
         align-items: center;
 
         .bloque {
-          flex: 1 1 100%; // ocupa todo el ancho
-          max-width: 100%; // sin límite
+        flex: 1 1 100%; 
+        max-width: 100%; 
         }
     }
     }

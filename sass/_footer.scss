@@ -1,7 +1,7 @@
 @use "variables" as v;
 footer {
     display: flex;
-    justify-content: space-between; // texto a la izquierda, iconos a la derecha
+    justify-content: space-between; 
     align-items: center;
     padding: 10px 20px;
     background-color: #f7e9e9;
@@ -14,12 +14,12 @@ footer {
 .redes {
     display: flex;
     align-items: center;
-    gap: 12px; // espacio entre iconos
+    gap: 12px; 
 
     a img {
-    width: 32px; // tamaño de los iconos
+    width: 32px; 
     height: 32px;
-      border-radius: 50%; // iconos redondos
+    border-radius: 50%; 
     object-fit: cover;
     transition: transform 0.3s ease;
 
@@ -27,15 +27,13 @@ footer {
         transform: scale(1.1);
 }
     }
-
-    // Animación solo para el icono de WhatsApp
     .whatsapp-icon {
     animation: pulse 1.5s infinite;
     }
 }
 }
 
-// Keyframes fuera de cualquier selector
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.15); }

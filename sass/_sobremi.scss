@@ -1,23 +1,23 @@
 @use "variables" as v;
 .contenedor-presentacion {
     display: flex;
-  flex-direction: row; // imagen a la izquierda, texto a la derecha
+    flex-direction: row; 
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
-    flex-wrap: wrap; // para que en pantallas chicas el texto baje debajo de la imagen
+    flex-wrap: wrap; 
 
 .foto {
-    flex-shrink: 0; // no se achica
-    width: 320px; // tamaño un poco más grande
+    flex-shrink: 0; 
+    width: 320px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .texto {
-    font-family: cursive;
-    flex: 1; // ocupa todo el espacio restante
+    font-style: normal;
+    flex: 1; 
     font-size: 1rem;
     line-height: 1.4;
     color: black;

@@ -3,10 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center; 
     gap: 2rem;
     background-color: #ffe6f0;
     padding: 1rem;
-    border-radius: 1rem;
+border-radius: 1rem;
 
 .imagen-ro {
     flex: 1 1 250px;
@@ -15,8 +16,9 @@
     align-items: center;
 
     .foto-ro {
-    width: 400px;
-    height: 400px;
+    width: 100%;       
+    max-width: 350px; 
+    height: auto;      
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -31,7 +33,9 @@
 .testimonios {
     flex: 2 1 400px;
 
-    h2 {
+    /* Aquí se aplica la cursiva solo al título dentro de testimonios */
+    .subtitulo-uno {
+    font-style: italic;
     color: #b30059;
     margin-bottom: 1rem;
     }
