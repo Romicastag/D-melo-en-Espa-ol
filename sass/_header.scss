@@ -1,9 +1,9 @@
 @use "variables" as v;
 
 header {
-position: sticky;
-top: 0;
-display: flex;
+    position: sticky;
+    top: 0;
+    display: flex;
     align-items: center; 
     justify-content: space-between; 
     background-color: #dbc5c5;
@@ -46,7 +46,7 @@ display: flex;
     gap: 5px;
 
     img {
-        width: 100px; 
+        width: 100px;
         height: auto;
         object-fit: cover;
         border-radius: 12px;
@@ -62,7 +62,7 @@ display: flex;
 }
 
 body{
-    background-image: url(../multimedia/fondo.png);
+    background-image: url(../multimedia/foto\ fondo.jpg);
 }
 .main {
     padding: 20px;
@@ -73,7 +73,7 @@ body{
     .subtitulo {
     font-family: cursive;
     font-size: 2rem;
-    color: #210d0d;
+    color: #181717;
     margin-bottom: 30px;
     }
 
@@ -88,8 +88,8 @@ body{
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        flex: 1 1 45%; 
-        max-width: 600px; 
+        flex: 1 1 45%; // ocupa casi la mitad en pantallas grandes
+        max-width: 600px; // permite imágenes más grandes
 
         .img1,
         .img2 {
@@ -110,7 +110,7 @@ body{
 }
 }
 
-// Responsive para celulares
+// Responsive para móviles
 @media (max-width: 768px) {
 .main {
     .inicio {
@@ -119,8 +119,8 @@ body{
         align-items: center;
 
         .bloque {
-        flex: 1 1 100%; 
-        max-width: 100%; 
+          flex: 1 1 100%; // ocupa todo el ancho
+          max-width: 100%; // sin límite
         }
     }
     }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 $fuente: Roboto;
-$fondoHeader:#dbc5c5;
+$fondoHeader:#a21818;
 $subtitulo:  rgb(33, 36, 33);
 *{
     margin: 0;
@@ -11,7 +11,7 @@ $subtitulo:  rgb(33, 36, 33);
 }
 
 body{
-    background-color: rgb(241, 211, 211);
+    background-image: url(../multimedia/fondo.png);
 }
 
 @mixin mobile{
